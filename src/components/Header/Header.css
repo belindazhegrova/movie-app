@@ -1,0 +1,85 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links {
+  padding: 28px 0;
+}
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+  position: relative;
+}
+.nav-links li a::after {
+  content: "";
+  background-color: #ff3d00;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5ms;
+}
+.nav-links li a:hover::after {
+  width: 100%;
+}
+.btn-register {
+  background: #ff3d00;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-login {
+  background: green;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-logout {
+  background: red;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 100%;
+
+  background-color: rgba(255, 255, 2555, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+::placeholder {
+  color: white;
+  font-size: 15px;
+}
+.search-bar button {
+  bottom: 0;
+
+  cursor: pointer;
+  position: relative;
+  right: 10px;
+}
+.Header {
+  /* background: linear-gradient(to bottom, rgba(60,60,60),rgba(90,90,90)); */
+background-color: #1B2027;
+}

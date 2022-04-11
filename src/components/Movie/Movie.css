@@ -1,0 +1,84 @@
+
+body{
+    background: black;
+}
+.card {
+    
+    margin-top: 0px;
+    background-color: grey;
+  }
+.item {
+    color:white;
+   }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+  }
+  
+  .card:hover .overlay {
+    opacity: 0.7;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .fa-play-circle:hover {
+  color: #ff3d00;
+  
+  }
+  button {
+    background: green;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  
+  }
+  .card-movie {
+
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(250px,2fr));
+    /* gap: 20px; */
+  }
+
+
+  .moviesContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+
+  @media screen and (min-width: 280px) and (max-width: 500px) {
+    .moviesContainer {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  @media screen and (min-width: 500px) and (max-width:700px) {
+    .moviesContainer {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media screen and (min-width: 700px) and (max-width:950px) {
+    .moviesContainer {
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
